@@ -1,0 +1,23 @@
+EOS BOOT PROCESS
+================
+
+This script is intended to be used by the boot node, at the point the build and launch scripts
+have been executed by all nodes and a closed non-block producing chain has been setup.
+
+Very highlevel description of the test to be performed:
+
+1. Use the eos snapshot tool to make a snapshot of the ERC20 distribution
+2. Use the snapshot to apply the distribution
+3. Setprods
+4. Burn keys and inform everybody to do this.
+
+Hope this will be helpfull.
+
+<3 Trinity (EOS BPs Group 3)
+
+FILES
+=====
+
+* script.sh
+
+starting script to test the boot process, this script will probably be modularized
